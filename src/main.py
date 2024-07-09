@@ -38,13 +38,7 @@ try:
 
     inicializar_bd()
 
-    # scrap_instagram(pesquisa(query, max_results))
-    scrap_instagram(
-        [
-            "https://www.instagram.com/cartoriopinheirosobral",
-            "https://www.instagram.com/cartoriorolim",
-            "https://www.instagram.com/cartorioleiteborges",
-        ]
-    )
+    scrap_instagram(pesquisa(query, max_results))
+
 except ValueError as e:
     print(f"o argumento de resultados precisa ser um numero inteiro: {e}")
